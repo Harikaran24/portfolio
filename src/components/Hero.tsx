@@ -31,8 +31,8 @@ const Hero: React.FC<HeroProps> = ({ nameScrollProgress = 0 }) => {
               <div className="absolute inset-0 z-0 rounded-full animate-gradient-spin bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 group-hover:from-blue-600 group-hover:via-purple-600 group-hover:to-cyan-600"></div>
               <div className="relative w-44 h-44 rounded-full p-1 bg-white shadow-xl ring-4 ring-transparent transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_40px_12px_rgba(0,186,255,0.28)] dark:group-hover:shadow-[0_0_40px_12px_rgba(34,211,238,0.32)]">
                 <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
-                  <img 
-                    src="/Harikaran's Passport size photo.jpg" 
+                 <img 
+                    src={`${import.meta.env.BASE_URL}profile.jpg`} 
                     alt="HARIKARAN G" 
                     className="w-full h-full object-cover object-top"
                   />
