@@ -20,7 +20,7 @@ const publications = [
 
 const Publications: React.FC = () => {
   return (
-    <section id="publications" className="py-20 bg-[#0d1321] dark:bg-[#0d1321]">
+    <section id="publications" className="py-20 bg-[#f7fafd] dark:bg-[#0d1321]">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Publications</h2>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full mb-10"></div>
