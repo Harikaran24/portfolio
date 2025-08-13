@@ -319,15 +319,12 @@ const Projects: React.FC = () => {
 
   // Handle modal opening with morphing animation
   const handleOpenModal = (index: number) => {
-    if (index >= 0 && index <= 5) {
       setMorphingCard(index);
-      
       // Start morphing animation
       setTimeout(() => {
         setOpenModal(index);
         setMorphingCard(null);
       }, 200);
-    }
   };
 
   // Handle modal closing with smooth animation
@@ -491,9 +488,11 @@ const Projects: React.FC = () => {
                   alt={
                     openModal === 0 ? embryoDetails.title :
                     openModal === 1 ? potholeDetails.title :
-                    openModal === 2 ? salesCallDetails.title :
-                    openModal === 3 ? solarStringDetails.title :
-                    openModal === 4 ? bottleQualityDetails.title :
+                    openModal === 2 ? audioDenoisingDetails.title :
+                    openModal === 3 ? salesCallDetails.title :
+                    openModal === 4 ? solarStringDetails.title :
+                    openModal === 5 ? cxoChatbotDetails.title :
+                    openModal === 6 ? bottleQualityDetails.title :
                     solarAnomalyDetails.title
                   }
                   className="w-full h-full object-cover rounded-t-2xl parallax"
@@ -504,9 +503,11 @@ const Projects: React.FC = () => {
                     {
                       openModal === 0 ? embryoDetails.title :
                       openModal === 1 ? potholeDetails.title :
-                      openModal === 2 ? salesCallDetails.title :
-                      openModal === 3 ? solarStringDetails.title :
-                      openModal === 4 ? bottleQualityDetails.title :
+                      openModal === 2 ? audioDenoisingDetails.title :
+                      openModal === 3 ? salesCallDetails.title :
+                      openModal === 4 ? solarStringDetails.title :
+                      openModal === 5 ? cxoChatbotDetails.title :
+                      openModal === 6 ? bottleQualityDetails.title :
                       solarAnomalyDetails.title
                     }
                   </h2>
@@ -521,9 +522,11 @@ const Projects: React.FC = () => {
                       {
                         openModal === 0 ? embryoDetails.problem :
                         openModal === 1 ? potholeDetails.problem :
-                        openModal === 2 ? salesCallDetails.problem :
-                        openModal === 3 ? solarStringDetails.problem :
-                        openModal === 4 ? bottleQualityDetails.problem :
+                        openModal === 2 ? audioDenoisingDetails.problem :
+                        openModal === 3 ? salesCallDetails.problem :
+                        openModal === 4 ? solarStringDetails.problem :
+                        openModal === 5 ? cxoChatbotDetails.problem :
+                        openModal === 6 ? bottleQualityDetails.problem :
                         solarAnomalyDetails.problem
                       }
                     </p>
@@ -535,9 +538,11 @@ const Projects: React.FC = () => {
                       {
                         (openModal === 0 ? embryoDetails.solution :
                         openModal === 1 ? potholeDetails.solution :
-                        openModal === 2 ? salesCallDetails.solution :
-                        openModal === 3 ? solarStringDetails.solution :
-                        openModal === 4 ? bottleQualityDetails.solution :
+                        openModal === 2 ? audioDenoisingDetails.solution :
+                        openModal === 3 ? salesCallDetails.solution :
+                        openModal === 4 ? solarStringDetails.solution :
+                        openModal === 5 ? cxoChatbotDetails.solution :
+                        openModal === 6 ? bottleQualityDetails.solution :
                         solarAnomalyDetails.solution).map((item, i) => <li key={i}>{item}</li>)
                       }
                     </ul>
@@ -549,9 +554,11 @@ const Projects: React.FC = () => {
                       {
                         (openModal === 0 ? embryoDetails.techStack :
                         openModal === 1 ? potholeDetails.techStack :
-                        openModal === 2 ? salesCallDetails.techStack :
-                        openModal === 3 ? solarStringDetails.techStack :
-                        openModal === 4 ? bottleQualityDetails.techStack :
+                        openModal === 2 ? audioDenoisingDetails.techStack :
+                        openModal === 3 ? salesCallDetails.techStack :
+                        openModal === 4 ? solarStringDetails.techStack :
+                        openModal === 5 ? cxoChatbotDetails.techStack :
+                        openModal === 6 ? bottleQualityDetails.techStack :
                         solarAnomalyDetails.techStack).map((item, i) => <li key={i}>{item}</li>)
                       }
                     </ul>
@@ -563,9 +570,11 @@ const Projects: React.FC = () => {
                       {
                         (openModal === 0 ? embryoDetails.impact :
                         openModal === 1 ? potholeDetails.impact :
-                        openModal === 2 ? salesCallDetails.impact :
-                        openModal === 3 ? solarStringDetails.impact :
-                        openModal === 4 ? bottleQualityDetails.impact :
+                        openModal === 2 ? audioDenoisingDetails.impact :
+                        openModal === 3 ? salesCallDetails.impact :
+                        openModal === 4 ? solarStringDetails.impact :
+                        openModal === 5 ? cxoChatbotDetails.impact :
+                        openModal === 6 ? bottleQualityDetails.impact :
                         solarAnomalyDetails.impact).map((item, i) => <li key={i}>{item}</li>)
                       }
                     </ul>
@@ -577,9 +586,11 @@ const Projects: React.FC = () => {
                       {
                         (openModal === 0 ? embryoDetails.highlights :
                         openModal === 1 ? potholeDetails.highlights :
-                        openModal === 2 ? salesCallDetails.highlights :
-                        openModal === 3 ? solarStringDetails.highlights :
-                        openModal === 4 ? bottleQualityDetails.highlights :
+                        openModal === 2 ? audioDenoisingDetails.highlights :
+                        openModal === 3 ? salesCallDetails.highlights :
+                        openModal === 4 ? solarStringDetails.highlights :
+                        openModal === 5 ? cxoChatbotDetails.highlights :
+                        openModal === 6 ? bottleQualityDetails.highlights :
                         solarAnomalyDetails.highlights).map((item, i) => <li key={i}>{item}</li>)
                       }
                     </ul>
