@@ -80,9 +80,8 @@ const Footer: React.FC = () => {
             © {currentYear} Harikaran G. All rights reserved.
           </p>
           <div className="flex items-center text-gray-400 text-sm">
-            <span>Made with</span>
+            <span>Designed & developed by Harikaran G</span>
             <Heart className="w-4 h-4 mx-2 text-red-500" />
-            <span>and React</span>
           </div>
         </div>
       </div>
