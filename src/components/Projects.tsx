@@ -56,6 +56,38 @@ const potholeDetails = {
   ]
 };
 
+const audioDenoisingDetails = {
+  title: 'AI-Powered Audio Denoising and Transcription System',
+  problem: 'Railway officials faced challenges in monitoring locomotive pilot communications due to loud engine noise and language barriers, making real-time safety oversight difficult and error-prone.',
+  solution: [
+    'I developed an AI-powered audio processing pipeline to denoise, transcribe, and translate locomotive pilot communications.',
+    'Highlights of the solution:',
+    'Used FFmpeg and SpeexDSP for audio preprocessing, including noise reduction, mono conversion, and volume normalization.',
+    'Applied AI-based vocal separation (Spleeter/Demucs) to isolate speech from background noise.',
+    'Implemented PyDub for audio segmentation, improving transcription efficiency.',
+    'Integrated Google Gemini 2.0 Flash for multilingual, high-accuracy speech-to-text with speaker diarization, timestamps, and summaries.',
+    'Deployed on AWS S3 for automated, scalable audio processing and secure storage.'
+  ],
+  techStack: [
+    'Python, FFmpeg, SpeexDSP for audio preprocessing',
+    'Spleeter/Demucs for AI-based vocal separation',
+    'PyDub for segmentation and chunking',
+    'Google Gemini 2.0 Flash for transcription and translation',
+    'AWS S3 for storage and pipeline automation'
+  ],
+  impact: [
+    'Significantly improved transcription accuracy in high-noise environments.',
+    'Enabled real-time monitoring and automated compliance reporting for railway officials.',
+    'Enhanced communication clarity for locomotive pilots, improving safety.'
+  ],
+  highlights: [
+    'Scalable architecture to handle audio files up to 5GB and 6 hours in duration.',
+    'Supports multi-language processing for diverse operational environments.',
+    'Can be adapted to other industries requiring high-accuracy transcription in noisy conditions.'
+  ]
+};
+
+
 const salesCallDetails = {
   title: 'AI-Driven Sales Call Insight & Performance Evaluation',
   problem: 'Sales teams often struggle to manually review calls, missing out on key cues about customer interest and rep performance. This leads to gaps in feedback, inconsistent lead qualification, and lost opportunities.',
@@ -110,6 +142,36 @@ const solarStringDetails = {
     'Can be extended to other industrial applications requiring automated data logging from images.'
   ]
 };
+
+const cxoChatbotDetails = {
+  title: 'CXO AI Business Intelligence Chatbot',
+  problem: 'Executives faced delays in retrieving insights from large CSV datasets, relying on manual analysis that slowed decision-making and reduced efficiency.',
+  solution: [
+    'I developed a conversational AI chatbot to query large CSV files, generate dynamic visualizations, and deliver actionable insights instantly.',
+    'Highlights of the solution:',
+    'Integrated Gemini 2.0 Flash, GPT-4, DeepSeek R1, and CSV Agent for natural language to data querying.',
+    'Used PandasAI for conversational data analysis and chart generation.',
+    'Implemented LangChain with FAISS for fast, context-aware retrieval from enterprise data.',
+    'Delivered results in user-friendly formats including tables, summaries, and dashboards.'
+  ],
+  techStack: [
+    'Python, PandasAI for conversational analytics',
+    'Google Generative AI (Gemini 2.0), GPT-4, DeepSeek R1',
+    'LangChain, FAISS for retrieval-augmented generation',
+    'CSV Agent for structured data handling and querying'
+  ],
+  impact: [
+    'Transformed static CSV files into interactive, actionable intelligence.',
+    'Reduced manual reporting effort and significantly cut decision-making time.',
+    'Enabled CXOs to make faster, data-driven decisions without SQL knowledge.'
+  ],
+  highlights: [
+    'Supports dynamic chart and dashboard generation within the chatbot interface.',
+    'Role-based access control for secure enterprise data access.',
+    'Adaptable to multiple industries handling large structured datasets.'
+  ]
+};
+
 
 const bottleQualityDetails = {
   title: 'Bottle Quality Detection System',
@@ -193,6 +255,17 @@ const Projects: React.FC = () => {
       gradient: "from-gray-600 to-blue-600"
     },
     {
+      title: "AI-Powered Audio Denoising & Transcription System",
+      category: "Generative AI",
+      icon: TrendingUp,
+      description: "End-to-end AI pipeline for denoising, transcribing, and translating locomotive pilot communications in noisy environments.",
+      image: "https://images.unsplash.com/photo-1519669417670-68775a50919e?w=600&h=400&fit=crop",
+      tags: ["FFmpeg", "SpeexDSP", "Spleeter", "Gemini 2.0 Flash"],
+      impact: "Improved transcription in noisy environments and enabled real-time safety monitoring.",
+      gradient: "from-purple-500 to-indigo-500"
+    },
+
+    {
       title: "AI-Driven Sales Call Insight & Performance Evaluation",
       category: "NLP & Analytics",
       icon: Bot,
@@ -211,6 +284,16 @@ const Projects: React.FC = () => {
       tags: ["PaddleOCR", "Tesseract", "OCR"],
       impact: "30% increase in data accuracy, reduced processing delays.\nStreamlined solar panel data management.",
       gradient: "from-yellow-500 to-orange-500"
+    },
+    {
+      title: "CXO AI Business Intelligence Chatbot",
+      category: "Generative AI",
+      icon: Bot,
+      description: "Conversational AI chatbot that queries large CSV datasets, generates visualizations, and delivers actionable insights instantly for faster decision-making.",
+      image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop",
+      tags: ["Gemini 2.0", "GPT-4", "LangChain", "PandasAI", "FAISS"],
+      impact: "Turned static CSVs into actionable intelligence.\nCut decision-making time and reduced manual reporting effort.",
+      gradient: "from-purple-500 to-pink-500"
     },
     {
       title: "Bottle Quality Detection System",
